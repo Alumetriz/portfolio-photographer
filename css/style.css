@@ -382,14 +382,9 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 36px;
-  /* or 200% */
-
+  line-height: 200%;
   text-align: center;
-
   color: #ffffff;
-
-  line-height: 2;
   text-align: center;
   margin: 0 auto;
 }
