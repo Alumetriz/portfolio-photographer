@@ -1371,5 +1371,8 @@ body {
     color: #FFFFFF;
 }
 
-
+.portfolio-btn__active {
+    color: #000;
+    background-color: #bdae82;
+}
 /*burger end*/
