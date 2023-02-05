@@ -1,5 +1,4 @@
 'use strict';
-
 const menuButton = document.querySelector('.menu-btn');
 const menu = document.querySelector('.menu');
 const overlay = document.querySelector('.overlay');
@@ -9,10 +8,14 @@ const burgerLinks = document.querySelectorAll('.burger-links');
 const portfolioBtn = document.querySelectorAll('.portfolio-block__button');
 const portfolioImages = document.querySelectorAll('.portfolio-image');
 
+function changeClassActive(btn, classActive) {
+    document.querySelector(`.${classActive}`)?.classList
+        .remove(`${classActive}`);
+    btn.classList.add(`${classActive}`);
+}
+
 let season = '';
-
 /* burger */
-
 menuButton.addEventListener('click', function () {
     console.log('click')
 
@@ -73,7 +76,7 @@ burgerLinks.forEach((link) => link.addEventListener('click', function () {
 
 
 /* portfolio */
-portfolioBtn.forEach((btn, index) => btn.addEventListener('click', function (e) {
+portfolioBtn.forEach((btn) => btn.addEventListener('click', function (e) {
     e.preventDefault()
     if (btn.classList.contains('winter')) {
         season = 'winter'
@@ -87,6 +90,7 @@ portfolioBtn.forEach((btn, index) => btn.addEventListener('click', function (e) 
     portfolioImages.forEach((img, index) => {
         img.src = `./src/img/pictures/${season}/${index + 1}.jpg`
     })
+
+    changeClassActive(btn, 'portfolio-btn__active')
 }))
 /* portfolio */
-
