@@ -155,6 +155,8 @@ body {
     align-items: center;
     height: 90px;
     background-image: url("../src/img/bg/header\ \(2\).jpg");
+    /*background-image: url("../src/img/bg/headerWhite.jpg");*/
+
     background-repeat: no-repeat;
     background-position: center 0;
 }
@@ -162,7 +164,7 @@ body {
 .logo {
     width: 50px;
     height: 50px;
-    background-image: url("../src/img/icons/logo\ 1.svg");
+    /*background-image: url("../src/img/icons/logo\ 1.svg");*/
     cursor: pointer;
     background-size: contain;
     background-repeat: no-repeat;
@@ -238,6 +240,8 @@ body {
 .welcome__wrapper {
     height: 820px;
     background: url("../src/img/bg/bg.png") center -90px no-repeat;
+    /*background: url("../src/img/bg/bgWhite.jpg") center -90px no-repeat;*/
+
     transition: 1s;
 }
 
@@ -1258,9 +1262,11 @@ body {
     .header__nav-list {
         display: none;
     }
+
     .lan__list {
         margin-right: 20px;
     }
+
     .header-burger {
         display: flex;
         justify-content: flex-end;
@@ -1303,14 +1309,17 @@ body {
 .menu-btn.active span:nth-of-type(1) {
     display: none;
 }
+
 .menu-btn.active span:nth-of-type(2) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(45deg);
 }
+
 .menu-btn.active span:nth-of-type(3) {
     top: 50%;
     transform: translate(-50%, 0%) rotate(-45deg);
 }
+
 .menu-btn.active span:nth-of-type(4) {
     display: none;
 }
@@ -1341,6 +1350,7 @@ body {
 .hidden {
     display: none;
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -1367,6 +1377,7 @@ body {
     font-size: 35px;
     line-height: 207%;
 }
+
 .burger-link {
     color: #FFFFFF;
 }
@@ -1375,4 +1386,132 @@ body {
     color: #000;
     background-color: #bdae82;
 }
+
 /*burger end*/
+
+
+
+/*  THEME  */
+
+.btn-theme {
+    background: url("../src/img/icons/theme/carbon_sun.svg") no-repeat;
+
+
+    /* фиксированное позиционирование */
+    position: fixed;
+    /* цвет фона */
+    /*background-color: #673ab7;*/
+    /* расстояние от правого края окна браузера */
+    right: -10px;
+    /* расстояние от нижнего края окна браузера */
+    bottom: 40px;
+    /* скругление верхнего левого угла */
+    border-top-left-radius: 8px;
+    /* скругление верхнего правого угла */
+    border-top-right-radius: 8px;
+    /* вид курсора */
+    cursor: pointer;
+    /* отображение элемента как flex */
+    display: flex;
+    /* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+    align-items: center;
+    /* выравниваем элементы внутри элемента по центру вдоль главной оси */
+    justify-content: center;
+    /* ширина элемента */
+    width: 60px;
+    /* высота элемента */
+    height: 50px;
+
+
+    z-index: 1000000000000;
+}
+
+.switch-theme {
+
+}
+
+.welcome-block__button-hover {
+    background: white;
+}
+.welcome-block__button-hover:hover {
+    background: #1C1C1C;
+    color: #BDAE82;
+}
+
+.body-white-style {
+    background-color: white;
+    color: black;
+}
+
+.logo-white-style {
+    fill: black;
+}
+.welcome__title-white-style {
+    color: black;
+    transition: 1s;
+}
+.welcome__wrapper-white-style {
+    background: url(../src/img/bg/bgWhite.jpg) center -90px no-repeat;
+}
+.header__wrapper-white-style {
+    background: url("../src/img/bg/headerWhite.jpg") center 0 no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+.header__nav-list-white-style li:hover {
+    color: white;
+}
+
+.welcome-block__button-white-style {
+
+}
+
+
+.title-white-style {
+    color: black;
+}
+
+.title-white-style::before,
+.title-white-style::after {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    max-width: 275px;
+    height: 2px;
+    background-color: black;
+    position: relative;
+}
+
+.skills-item__title-white-style {
+    color: black;
+}
+.skills-item__text-white-style {
+    color: black;
+}
+
+.portfolio-block__buttons-white-style {
+    color: black;
+    border: 2px solid black;
+}
+.portfolio-block__buttons-white-style:hover {
+    background: #1C1C1C;
+    color: #BDAE82;
+}
+.portfolio-btn__active-white-style {
+    background: BLACK;
+    color: #BDAE82;
+}
+
+
+
+
+.viewer {
+    width: 100%;
+    height: auto;
+    border: 1px solid #bdae82;
+    border-bottom: 0;
+}
