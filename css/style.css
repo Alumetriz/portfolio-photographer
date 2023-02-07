@@ -1424,6 +1424,10 @@ body {
 
     z-index: 1000000000000;
 }
+.btn-theme-white-style {
+    background: url("../src/img/icons/theme/Vector.svg") no-repeat;
+}
+
 
 .switch-theme {
 
@@ -1608,4 +1612,26 @@ body {
 
 .menu-btn-white-style span {
     background-color: black;
+}
+
+.header-link {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 250%;
+    transition: 0.3s;
+    cursor: pointer;
+    color: white;
+}
+
+.header-link:hover {
+    color: #bdae82;
+}
+
+.header-link-white-style {
+    color: #1C1C1C;
+}
+.header-link-white-style:hover {
+    color: white;
 }

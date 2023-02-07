@@ -149,10 +149,14 @@ const contactsButton = document.querySelector('.contacts__button');
 contactsButton.addEventListener('click', function (e) {
     e.preventDefault()
 })
+let isWhite = false;
 themeButton.addEventListener('click', function () {
+    isWhite = true;
+
 
     const btnTheme = document.querySelector('.btn-theme');
-    btnTheme.style.background = `url("../src/img/icons/theme/Vector.svg") no-repeat`
+    // btnTheme.style.background = `url("../src/img/icons/theme/Vector.svg") no-repeat`
+    btnTheme.classList.toggle('btn-theme-white-style');
     const logo = document.querySelector('.icon-logo');
     console.log('black')
 
@@ -164,9 +168,13 @@ themeButton.addEventListener('click', function () {
     const welcomeWrapper = document.querySelector('.welcome__wrapper');
     const headerWrapper = document.querySelector('.header__wrapper');
     const headerNavList = document.querySelector('.header__nav-list')
+    const headerLinks = document.querySelectorAll('.header-link ');
     headerNavList.classList.toggle('header__nav-list-white-style')
     welcomeWrapper.classList.toggle('welcome__wrapper-white-style');
     headerWrapper.classList.toggle('header__wrapper-white-style');
+    headerLinks.forEach((link) => {
+        link.classList.toggle('header-link-white-style');
+    })
 
     const welcomeBtn = document.querySelector('.welcome-block__button');
 
@@ -241,4 +249,6 @@ themeButton.addEventListener('click', function () {
     burgerLinksAll.forEach((link) => {
         link.classList.toggle('burger-link-white-style')
     })
+
+
 })
