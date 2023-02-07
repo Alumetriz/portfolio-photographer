@@ -1187,21 +1187,21 @@ body {
     filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 }
 
-.fb {
-    background-image: url("../src/img/icons/fb\ 1.svg");
-}
+/*.fb {*/
+/*    background-image: url("../src/img/icons/fb\ 1.svg");*/
+/*}*/
 
-.inst {
-    background-image: url("../src/img/icons/inst\ 1.svg");
-}
+/*.inst {*/
+/*    background-image: url("../src/img/icons/inst\ 1.svg");*/
+/*}*/
 
-.tw {
-    background-image: url("../src/img/icons/tw\ 1.svg");
-}
+/*.tw {*/
+/*    background-image: url("../src/img/icons/tw\ 1.svg");*/
+/*}*/
 
-.pinterest {
-    background-image: url("../src/img/icons/pinterest\ 1.svg");
-}
+/*.pinterest {*/
+/*    background-image: url("../src/img/icons/pinterest\ 1.svg");*/
+/*}*/
 
 .social-item a {
     display: block;
@@ -1390,7 +1390,6 @@ body {
 /*burger end*/
 
 
-
 /*  THEME  */
 
 .btn-theme {
@@ -1433,6 +1432,7 @@ body {
 .welcome-block__button-hover {
     background: white;
 }
+
 .welcome-block__button-hover:hover {
     background: #1C1C1C;
     color: #BDAE82;
@@ -1446,13 +1446,16 @@ body {
 .logo-white-style {
     fill: black;
 }
+
 .welcome__title-white-style {
     color: black;
     transition: 1s;
 }
+
 .welcome__wrapper-white-style {
     background: url(../src/img/bg/bgWhite.jpg) center -90px no-repeat;
 }
+
 .header__wrapper-white-style {
     background: url("../src/img/bg/headerWhite.jpg") center 0 no-repeat;
     display: flex;
@@ -1489,6 +1492,7 @@ body {
 .skills-item__title-white-style {
     color: black;
 }
+
 .skills-item__text-white-style {
     color: black;
 }
@@ -1496,22 +1500,112 @@ body {
 .portfolio-block__buttons-white-style {
     color: black;
     border: 2px solid black;
+    /*background: #BDAE82;*/
 }
+
 .portfolio-block__buttons-white-style:hover {
     background: #1C1C1C;
     color: #BDAE82;
 }
+
 .portfolio-btn__active-white-style {
     background: BLACK;
     color: #BDAE82;
 }
 
+.price-items-white-style {
+    border: 3px solid black;
+}
 
+.price-btn-white-style {
+    border: 1px solid black;
+}
 
+.price-btn-white-style:hover {
+    background: #1C1C1C;
+    color: #BDAE82;
+}
 
-.viewer {
-    width: 100%;
-    height: auto;
-    border: 1px solid #bdae82;
-    border-bottom: 0;
+.lng-span-active {
+    color: #ffbe00;
+    text-shadow: 1px 1px black;
+}
+
+.lng-span-active-white-style {
+    color: #BDAE82;
+}
+
+.price-cost-white-style {
+    color: black;
+}
+
+.contacts__wrapper-white-style {
+    background: url(../src/img/bg/contactsWhite.jpg) center;
+
+    min-height: 700px;
+    padding-top: 60px;
+    padding-right: 20px;
+    background-size: auto 700px;
+}
+
+.contacts__title-white-style {
+    color: #1C1C1C;
+}
+
+.input__type-email-white-style,
+.input__type-tel-white-style,
+.text__message-white-style {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid #BDAE82;
+    color: black;
+}
+.input__type-email-white-style::placeholder,
+.input__type-tel-white-style::placeholder,
+.text__message-white-style::placeholder {
+    font-family: inherit;
+    color: #1C1C1C;
+    font-size: 20px;
+}
+.input__type-email-white-style:focus,
+.input__type-email-white-style:hover,
+.input__type-tel-white-style:focus,
+.input__type-tel-white-style:hover,
+.text__message-white-style:focus,
+.text__message-white-style:hover {
+    background: #ffffff;
+    border-color: #000000;
+}
+
+.contacts__button-white-style {
+    background: white;
+}
+
+.contacts__button-white-style:hover {
+    background: #1C1C1C;
+    color: #BDAE82;
+}
+
+.footer-icon-white-style {
+    fill: black;
+}
+
+.footer-white-style {
+    background-color: white;
+}
+.rss-white-style,
+.year-white-style,
+.copyright-white-style,
+.githubUsername-white-style {
+    color: black;
+}
+
+.menu-white-style {
+    background: white;
+}
+.burger-link-white-style {
+    color: black;
+}
+
+.menu-btn-white-style span {
+    background-color: black;
 }

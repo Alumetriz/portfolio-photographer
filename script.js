@@ -134,6 +134,8 @@ function switchActiveClass(event) {
 
 en.addEventListener('click', switchActiveClass);
 ru.addEventListener('click', switchActiveClass);
+
+
 // translate
 
 
@@ -142,7 +144,11 @@ ru.addEventListener('click', switchActiveClass);
 const themeButton = document.querySelector('.btn-theme');
 const switchTheme = document.querySelector('.switch-theme');
 const themeIcon = document.querySelector('.theme-icon');
+const contactsButton = document.querySelector('.contacts__button');
 
+contactsButton.addEventListener('click', function (e) {
+    e.preventDefault()
+})
 themeButton.addEventListener('click', function () {
 
     const btnTheme = document.querySelector('.btn-theme');
@@ -174,6 +180,7 @@ themeButton.addEventListener('click', function () {
 
     const skillsItemTitles = document.querySelectorAll('.skills-item__title');
     const skillsItemTextes = document.querySelectorAll('.skills-item__text');
+
     skillsItemTitles.forEach((title) => {
         title.classList.toggle('skills-item__title-white-style');
     })
@@ -184,5 +191,54 @@ themeButton.addEventListener('click', function () {
         btn.classList.toggle('portfolio-block__buttons-white-style')
     });
 
+    const priceButtons = document.querySelectorAll('.price-btn');
+    const priceItems = document.querySelectorAll('.price-item');
+    const priceCost = document.querySelectorAll('.price-cost');
+    priceItems.forEach((item) => {
+        item.classList.toggle('price-items-white-style')
+    })
+    priceButtons.forEach((btn) => {
+        btn.classList.toggle('price-btn-white-style')
+    })
+    priceCost.forEach((el) => {
+        el.classList.toggle('price-cost-white-style')
+    })
 
+    const contactsWrapper = document.querySelector('.contacts__wrapper');
+    const contactsTitle = document.querySelector('.contacts__title');
+    const inputTypeEmail = document.querySelector('.input__type-email');
+    const inputTypeTel = document.querySelector('.input__type-tel');
+    const textMessage = document.querySelector('.text__message');
+    const contactsButton = document.querySelector('.contacts__button');
+    const footerIcons = document.querySelectorAll('.footer-icon');
+    const footer = document.querySelector('.footer');
+    const rss = document.querySelector('.rss');
+    const githubUsername = document.querySelector('.github-username');
+    const year = document.querySelector('.year');
+    const copyright = document.querySelector('.copyright');
+    const burgerLinksAll = document.querySelectorAll('.burger-link');
+    // const menuActive
+    contactsWrapper.classList.toggle('contacts__wrapper-white-style')
+    contactsTitle.classList.toggle('contacts__title-white-style')
+    inputTypeEmail.classList.toggle('input__type-email-white-style')
+    inputTypeTel.classList.toggle('input__type-tel-white-style')
+    textMessage.classList.toggle('text__message-white-style')
+    contactsButton.addEventListener('click', function (e) {
+        e.preventDefault()
+    })
+    contactsButton.classList.toggle('contacts__button-white-style');
+    footer.classList.toggle('footer-white-style');
+    footerIcons.forEach((icon) => {
+        icon.classList.toggle('footer-icon-white-style')
+    })
+    rss.classList.toggle('rss-white-style');
+    githubUsername.classList.toggle('githubUsername-white-style');
+    year.classList.toggle('year-white-style')
+    copyright.classList.toggle('copyright-white-style')
+
+    menu.classList.toggle('menu-white-style')
+    menuButton.classList.toggle('menu-btn-white-style')
+    burgerLinksAll.forEach((link) => {
+        link.classList.toggle('burger-link-white-style')
+    })
 })
